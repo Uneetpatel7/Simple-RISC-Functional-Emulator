@@ -13,7 +13,7 @@ README
 Table of contents
 1. Directory Structure
 2. What the software is doing
-3. Known limitations/bugs if any
+3. Handling of data lock and branch lock conditions
 4. How to compile
 5. How to use/run.
 
@@ -51,7 +51,7 @@ CSL211-Project
 
 2. What the software is doing:
 -------------------------------
-Implementing function simulator and pipeline simular in c++ language for simpleRISC processor. 
+Implementing pipeline simular in c++ language for simpleRISC processor. 
 Simulator takes instruction encoding in MEM file as input (From the test folder). MEM file has the following format:
 
 #First number is address of the instruction, followed by space followed by instruction encoding. For example :
@@ -79,9 +79,11 @@ Credits : Special thanks to Prateek Chajjer for providing the basic mem file for
 both the programs, although there were minor errors which we corrected.
 
 
-3. Known limitations/bugs if any
+3. Handling of data lock and branch lock conditions
 ----------------------------------
-Not any specific limitations.
+The branch and the data lock conditions were handeled by inserting NOP instructions in the pipeline. 
+The data dependencies were detected by a function called checkdatalock in the src/pipeline.cpp file and branch lock were handeled
+by inserting two NOPs after every branch.
 
 
 4. How to compile
@@ -98,5 +100,5 @@ For cleaning the project:
 -------------------
 ../bin/mySimpleSim ../test/fib.mem <optional>
 
-optional = 1, for running the pipeline simulator, otherwise put as anything for simple simulator
+optional = 1,  running the pipeline simulator
 
