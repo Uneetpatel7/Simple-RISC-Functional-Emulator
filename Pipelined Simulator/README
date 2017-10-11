@@ -100,5 +100,5 @@ For cleaning the project:
 -------------------
 ../bin/mySimpleSim ../test/fib.mem <optional>
 
-optional = 1,  running the pipeline simulator
+optional = 1,  running the pipeline simulator otherwise put as anything for simple simulator
 
