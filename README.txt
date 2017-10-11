@@ -1,6 +1,7 @@
 ================================================
-Simple-RISC Funtional Emulator
+#Simple-RISC Funtional Emulator
 ================================================
+#THE CODE FOR PIPELINED SIMULATOR CAN BE FOUND IN THE FOLDR OF PIPELINED SIMULATOR 
 
 README
 
