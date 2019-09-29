@@ -1,5 +1,6 @@
 ================================================
 #Simple-RISC Funtional Emulator
+AUTHOR UNEET PATEL - 2015CSB1038
 ================================================
 #THE CODE FOR PIPELINED SIMULATOR CAN BE FOUND IN THE FOLDR OF PIPELINED SIMULATOR 
 
